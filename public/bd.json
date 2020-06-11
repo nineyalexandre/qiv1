@@ -1,1 +1,44 @@
-{"name":"John", "age":31, "city":"New York"}
+{
+  "bd": [
+    {
+      "id": "A00001",
+      "nom": "Ordinateur Portable ZenBook",
+      "marque": "Asus",
+      "prix": 945,
+      "description": "Nouvel ordinateur portable Asus Zenbook avec les dernières technologies",
+      "image": "ordi_asus"
+    },
+    {
+      "id": "A00002",
+      "nom": "Téléphone Samsung S20",
+      "marque": "Samsung",
+      "prix": 1495,
+      "description": "Découvrez le tout nouveau téléphone intelligent de Samsung!",
+      "image": "tel_samsung"
+    },
+    {
+      "id": "A00003",
+      "nom": "Imprimante Laser Canon XPX",
+      "marque": "Canon",
+      "prix": 399,
+      "description": "Imprimez à la vitesse de la lumière avec l'imprimante laser XPX de Canon",
+      "image": "imp_canon"
+    },
+    {
+      "id": "A00004",
+      "nom": "Ecran Iiyama 27HE34",
+      "marque": "Iiyama",
+      "prix": 599,
+      "description": "Profitez d'une image haute définition avec ce magnifique écran Iiyama",
+      "image": "ecran_iiyama"
+    },
+    {
+      "id": "A00005",
+      "nom": "Souris sans fil bluetooth Logitech M705",
+      "marque": "Logitech",
+      "prix": 60,
+      "description": "Optimisez votre efficacité en vous offrant la Logitech M705 à un prix imbattable",
+      "image": "souris_logitech"
+    }
+  ]
+}
