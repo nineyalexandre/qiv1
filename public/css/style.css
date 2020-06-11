@@ -1,0 +1,74 @@
+
+.banner {
+	background-color: #203864;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+}
+
+.banner img {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	height: 100%;;
+	width: 100px;
+}
+
+.banner ul {
+	list-style-type: none;
+	padding: 0px;
+	margin-left: 100px;
+}
+
+.banner li {
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	padding: 0px;
+	line-height: 100px;
+}
+
+.banner li :hover {
+	background-color: grey;
+}
+
+.banner a {
+	display: block;
+	color: lightgrey;
+	text-decoration: none;
+}
+
+.gerant{
+	font-family: Arial;
+}
+
+.gerant img {
+	float: left;
+	width: 200px;
+}
+
+.gerant h3,p {
+	margin-left: 250px;
+	margin-right: 50px;
+	text-align: justify;
+}
+
+.gerant header{
+	background-color: #203864;
+	width: 100%;
+	padding: 1px;
+	margin-bottom: 50px;
+	color: lightgrey;
+
+}
+.gerant header h1{
+	margin-left: 20px;
+}
+
+.contact img{
+	padding:50px;
+}
