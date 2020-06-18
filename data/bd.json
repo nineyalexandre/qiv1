@@ -1,12 +1,12 @@
 {
-  "bd": [
+  "articles": [
     {
       "id": "A00001",
       "nom": "Ordinateur Portable ZenBook",
       "marque": "Asus",
       "prix": 945,
       "description": "Nouvel ordinateur portable Asus Zenbook avec les dernières technologies",
-      "image": "ordi_asus"
+      "image": "laptop_asus.jpg"
     },
     {
       "id": "A00002",
@@ -14,7 +14,7 @@
       "marque": "Samsung",
       "prix": 1495,
       "description": "Découvrez le tout nouveau téléphone intelligent de Samsung!",
-      "image": "tel_samsung"
+      "image": "tel_samsung.png"
     },
     {
       "id": "A00003",
@@ -22,7 +22,7 @@
       "marque": "Canon",
       "prix": 399,
       "description": "Imprimez à la vitesse de la lumière avec l'imprimante laser XPX de Canon",
-      "image": "imp_canon"
+      "image": "imp_canon.jpg"
     },
     {
       "id": "A00004",
@@ -30,7 +30,7 @@
       "marque": "Iiyama",
       "prix": 599,
       "description": "Profitez d'une image haute définition avec ce magnifique écran Iiyama",
-      "image": "ecran_iiyama"
+      "image": "ecran_iiyama.jpg"
     },
     {
       "id": "A00005",
@@ -38,7 +38,7 @@
       "marque": "Logitech",
       "prix": 60,
       "description": "Optimisez votre efficacité en vous offrant la Logitech M705 à un prix imbattable",
-      "image": "souris_logitech"
+      "image": "souris_logitech.jpg"
     }
   ]
 }

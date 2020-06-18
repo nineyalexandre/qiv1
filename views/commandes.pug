@@ -1,0 +1,21 @@
+extends layout
+block content
+	.recap
+		h1 Récapitulatif de votre commande
+		ul
+			li=	"No de commande : " + numCde
+			li= "Article no : " + commande.id
+			li= "Quantite : " + commande.quantite
+			li= "Client : " + commande.prenom
+		.interac
+			img(src='./images/interac-logo.png' alt='logo interac')
+			p.interacText
+				|Afin de valider votre commande nous vous remercions
+				br
+				|de faire parvenir votre virement via Interac à l'adresse :
+				a(href='mailto:qi_paiement@qi.ca')
+					br
+					| qi_paiement@qi.ca
+				br
+				br
+				| La réponse à la question Interac devra être : QIBOUTIQUE

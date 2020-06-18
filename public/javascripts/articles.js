@@ -1,5 +1,5 @@
 function lireArticles(){
-    fetch("./bd.json")
+    fetch("../json/bd.json")
     .then(function (body){
         return body.text();
     })
@@ -9,4 +9,5 @@ function lireArticles(){
         pre.innerHTML = JSON.stringify(obj, null, 2);
         document.getElementById("articles").appendChild(pre);
     })
+
 }

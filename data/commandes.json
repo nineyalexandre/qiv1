@@ -1,0 +1,23 @@
+{
+	"articles": [
+		{
+			"numero": 1,
+			"prenom": "Francis",
+			"ramassage": "2020-07-12 12:34",
+			"statut": "préparation"
+		},
+		{
+			"numero": 2,
+			"prenom": "Albert",
+			"ramassage": "2020-06-22 8:34",
+			"statut": "prêt"
+		},
+		{
+			"numero": 3,
+			"prenom": "Ela",
+			"ramassage": "2020-06-12 11:05",
+			"statut": "livré"
+		}
+	]
+	
+}

@@ -1,7 +1,35 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		meta(charset='UTF-8')
+		link(rel='stylesheet' type='text/css' href='./css/style.css')
+		script(type='text/javascript' src='../javascripts/articles.js')
+		title Qi - Page d'accueil
+	nav.banner
+		ul.barreh
+			li
+				a(href='/')
+					img(src='./images/logo.gif' alt='logo QI')
+			li
+				a.link(href='/gerant' onclick="window.open(this.href, 'Popup',\
+				'scrollbars=1,resizable=1,height=450,width=800');\
+				return false;") G&eacute;rant
+			li
+				a.link(href='./contact') Contact
+			li
+				a.link(href='./formulaire') Commandes
+	body
+		block content
+	
+	footer
+		ul.barreh
+			li
+				| Site développé dans le cadre du cours 
+				a.linkfooter(href='https://etudier.uqam.ca/cours?sigle=INF3190') INF3190 
+				| de l'
+				a.linkfooter(href='https://uqam.ca/') UQAM
+			li
+				|Développeur: Alexandre Niney
+			li
+				a.linkfooter(href='mailto:niney.alexandre@courrier.uqam.ca')
+					| Contact email du développeur

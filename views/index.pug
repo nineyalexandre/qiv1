@@ -1,7 +1,14 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
-  
-  include index.html
+	h1.titreindex Québec Informatique
+		br
+		|Votre boutique maintenant sur Internet
+	.articles
+		each article in file
+			ul
+				img(src="./images/"+ article.image, alt=article.image)
+				p.nom= article.nom
+				li= "Description : " + article.description
+				li= "Marque : " + article.marque
+				li= "Id : " + article.id
+				p.prix= "Prix : " + article.prix + " $"

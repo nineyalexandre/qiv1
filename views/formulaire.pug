@@ -1,0 +1,23 @@
+extends layout
+block content
+	.formulaire
+		h1 Formulaire de commande
+
+		// register form
+		form(method='POST' action='/commandes')
+			div.form-group
+				label(for='id') Id:
+				input#id.input(list='ids' placeholder='-- Selectionner id --' name='id')
+				datalist#ids
+					option(value='A00001')
+					option(value='A00002')
+					option(value='A00003')
+					option(value='A00004')
+					option(value='A00005')
+			div.form-group
+				label(for='quantite') Quantité:
+				input#qte.input(type='number', placeholder='Nombre d\'article' name='quantite')
+			div.form-group
+				label(for='prenom') Prénom:
+				input#prenom.input(type='text' placeholder='Prénom' name='prenom')
+			button(type='submit') Envoyer commande
