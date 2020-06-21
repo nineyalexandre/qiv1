@@ -1,23 +1,40 @@
 {
-	"articles": [
-		{
-			"numero": 1,
-			"prenom": "Francis",
-			"ramassage": "2020-07-12 12:34",
-			"statut": "pr�paration"
-		},
-		{
-			"numero": 2,
-			"prenom": "Albert",
-			"ramassage": "2020-06-22 8:34",
-			"statut": "pr�t"
-		},
-		{
-			"numero": 3,
-			"prenom": "Ela",
-			"ramassage": "2020-06-12 11:05",
-			"statut": "livr�"
-		}
-	]
-	
+  "articles": [
+    {
+      "numero": 1,
+      "prenom": "Francis",
+      "ramassage": "2020-07-12 12:34",
+      "statut": "préparation"
+    },
+    {
+      "numero": 2,
+      "prenom": "Albert",
+      "ramassage": "2020-06-22 8:34",
+      "statut": "prêt"
+    },
+    {
+      "numero": 3,
+      "prenom": "Ela",
+      "ramassage": "2020-06-12 11:05",
+      "statut": "livré"
+    },
+    {
+      "numero": 4,
+      "prenom": "Jonathan",
+      "ramassage": "2020-06-18 17:25",
+      "statut": "préparation"
+    },
+    {
+      "numero": 5,
+      "prenom": "Sophie",
+      "ramassage": "2020-06-01 14:05",
+      "statut": "préparation"
+    },
+    {
+      "numero": 6,
+      "prenom": "Alfred",
+      "ramassage": "2020-06-05 08:00",
+      "statut": "préparation"
+    }
+  ]
 }

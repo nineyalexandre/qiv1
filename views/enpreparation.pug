@@ -1,0 +1,19 @@
+extends layout
+block content
+	.tableprep
+		h1 Commandes en préparation
+		table
+			thead
+				tr
+					th Numero de commande
+					th Prénom
+					th Ramassage
+					th Statut
+			tbody
+			each cdesjson in file
+				if cdesjson.statut == "préparation"
+					tr
+						td #{cdesjson.numero}
+						td #{cdesjson.prenom}
+						td #{cdesjson.ramassage}
+						td #{cdesjson.statut}

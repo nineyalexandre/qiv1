@@ -8,10 +8,13 @@ var gerantRouter = require('./routes/gerant');
 var formulaireRouter = require('./routes/formulaire');
 var contactRouter = require('./routes/contact');
 var commandesRouter = require('./routes/commandes');
+var enpreparationRouter = require('./routes/enpreparation');
+var statutGETRouter = require('./routes/statutGET');
+var statutPOSTRouter = require('./routes/statutPOST');
 var usersRouter = require('./routes/users');
 var app = express();
 var engines = require('consolidate');
-const bodyParser = require('body-parser')
+
 
 
 
@@ -30,17 +33,11 @@ app.use('/gerant', gerantRouter);
 app.use('/formulaire', formulaireRouter);
 app.use('/contact', contactRouter);
 app.use('/commandes', commandesRouter);
+app.use('/enpreparation', enpreparationRouter);
+app.use('/statut', statutGETRouter);
+app.use('/statut', statutPOSTRouter);
 app.use('/users', usersRouter);
 
-//traitement de la commande
-app.use(bodyParser.urlencoded({ extended: true }))
-app.post('/commandes', (req, res) => {
-	console.log('Id: ' + req.body.id)
-	console.log('Quantité: ' + req.body.quantite)
-	console.log('Prénom: ' + req.body.prenom)
-	
-	res.redirect('/commandes')
-})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

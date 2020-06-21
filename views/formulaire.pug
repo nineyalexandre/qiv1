@@ -7,7 +7,7 @@ block content
 		form(method='POST' action='/commandes')
 			div.form-group
 				label(for='id') Id:
-				input#id.input(list='ids' placeholder='-- Selectionner id --' name='id')
+				input#id.input(list='ids' required="required" placeholder='-- Selectionner id --' name='id')
 				datalist#ids
 					option(value='A00001')
 					option(value='A00002')
@@ -16,8 +16,8 @@ block content
 					option(value='A00005')
 			div.form-group
 				label(for='quantite') Quantité:
-				input#qte.input(type='number', placeholder='Nombre d\'article' name='quantite')
+				input#qte.input(type='number' required="required" min="1" placeholder='Nombre d\'article' name='quantite')
 			div.form-group
 				label(for='prenom') Prénom:
-				input#prenom.input(type='text' placeholder='Prénom' name='prenom')
+				input#prenom.input(type='text' required="required" placeholder='Prénom' name='prenom')
 			button(type='submit') Envoyer commande

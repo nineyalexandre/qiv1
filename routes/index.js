@@ -14,4 +14,10 @@ router.get('/',function (req, res, next){
 	});
 });
 
+//redirection vers les site covid
+router.get(/.*covid.*/, function(req, res, next) {
+  res.redirect('https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/');
+	
+});
+
 module.exports = router;

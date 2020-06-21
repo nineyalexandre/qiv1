@@ -3,14 +3,14 @@ html(lang='fr')
 html
 	head
 		meta(charset='UTF-8')
-		link(rel='stylesheet' type='text/css' href='./css/style.css')
+		link(rel='stylesheet' type='text/css' href='./../css/style.css')
 		script(type='text/javascript' src='../javascripts/articles.js')
 		title Qi - Page d'accueil
 	nav.banner
 		ul.barreh
 			li
 				a(href='/')
-					img(src='./images/logo.gif' alt='logo QI')
+					img(src='./../images/logo.gif' alt='logo QI')
 			li
 				a.link(href='/gerant' onclick="window.open(this.href, 'Popup',\
 				'scrollbars=1,resizable=1,height=450,width=800');\
@@ -20,12 +20,30 @@ html
 			li
 				a.link(href='./formulaire') Commandes
 	body
-		block content
-	
+		.tableprep
+			h1 Statut de la commande
+			if bonNo
+				table
+					thead
+						tr
+							th Numero de commande
+							th Prénom
+							th Ramassage
+							th Statut
+					tbody
+					each cdejson in file
+						if cdejson.numero == numcommande
+							tr
+								td #{cdejson.numero}
+								td #{cdejson.prenom}
+								td #{cdejson.ramassage}
+								td #{cdejson.statut}
+			else
+				p Pas de commande identifiée sous ce numéro
 	footer
 		ul.barreh
 			li
-				img(src='./images/UQAM.jpg' alt='logo UQAM')
+				img(src='./../images/UQAM.jpg' alt='logo UQAM')
 			li
 				| Site développé dans le cadre du cours 
 				a.linkfooter(href='https://etudier.uqam.ca/cours?sigle=INF3190' target="_blank") INF3190 
