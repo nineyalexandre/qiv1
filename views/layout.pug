@@ -3,29 +3,28 @@ html(lang='fr')
 html
 	head
 		meta(charset='UTF-8')
-		link(rel='stylesheet' type='text/css' href='./css/style.css')
-		script(type='text/javascript' src='../javascripts/articles.js')
-		title Qi - Page d'accueil
+		link(rel='stylesheet' type='text/css' href='/css/style.css')
+		title Qi - #{title}
 	nav.banner
 		ul.barreh
 			li
 				a(href='/')
-					img(src='./images/logo.gif' alt='logo QI')
+					img(src='/images/logo.gif' alt='logo QI')
 			li
 				a.link(href='/gerant' onclick="window.open(this.href, 'Popup',\
 				'scrollbars=1,resizable=1,height=450,width=800');\
 				return false;") G&eacute;rant
 			li
-				a.link(href='./contact') Contact
+				a.link(href='/contact') Contact
 			li
-				a.link(href='./formulaire') Commandes
+				a.link(href='/formulaire') Commandes
 	body
 		block content
 	
 	footer
 		ul.barreh
 			li
-				img(src='./images/UQAM.jpg' alt='logo UQAM')
+				img(src='/images/UQAM.jpg' alt='logo UQAM')
 			li
 				| Site développé dans le cadre du cours 
 				a.linkfooter(href='https://etudier.uqam.ca/cours?sigle=INF3190' target="_blank") INF3190 

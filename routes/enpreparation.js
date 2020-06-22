@@ -10,7 +10,7 @@ router.get('/',function (req, res, next){
 	var cdesjson=JSON.parse(cdesdata)["articles"];
 
 	res.render("enpreparation",{
-		file: cdesjson
+		file: cdesjson, title: 'En préparation'
 	});
 });
 

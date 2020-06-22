@@ -1,0 +1,25 @@
+extends layout
+block content
+		.tableprep
+			h1 Statut de la commande
+			if bonNo
+				table
+					thead
+						tr
+							th Numero de commande
+							th Image du produit
+							th Prénom
+							th Ramassage
+							th Statut
+					tbody
+					each cdejson in file
+						if cdejson.numero == numcommande
+							tr
+								td #{cdejson.numero}
+								td
+									img(src='./../images/laptop_asus.jpg' alt='image_produit')
+								td #{cdejson.prenom}
+								td #{cdejson.ramassage}
+								td #{cdejson.statut}
+			else
+				p Pas de commande identifiée sous ce numéro

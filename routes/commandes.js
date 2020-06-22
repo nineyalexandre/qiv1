@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
 
 //traitement de la commande
 router.use(bodyParser.urlencoded({ extended: true }))
+
 router.post('/', (req, res) => {
 	var nbCde = 0;
 	var commande = req.body
@@ -24,7 +25,7 @@ router.post('/', (req, res) => {
 	for(key in articlejson){
 		nbCde ++;
 	}
-	res.render('commandes', {commande: commande, numCde : nbCde +1});
+	res.render('commandes', {commande: commande, numCde : nbCde +1, title: 'Commandes'});
 })
 
 module.exports = router;

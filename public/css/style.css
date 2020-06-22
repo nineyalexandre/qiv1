@@ -1,8 +1,10 @@
+/* Ensemble des body du site*/
 body {
 	background-color: #e0e0eb;
 	font-family: Arial;
 }
 
+/* Barre de navigation*/
 .banner ul {
 	list-style-type: none;
 	background-color: #203864;
@@ -41,6 +43,7 @@ body {
 	display: block;
 }
 
+/* Page Gerant*/
 .gerant img {
 	float: left;
 	width: 200px;
@@ -64,6 +67,7 @@ body {
 	margin-left: 20px;
 }
 
+/* Page Contact */
 .contact {
 	margin-bottom: 250px;
 }
@@ -72,6 +76,7 @@ body {
 	padding: 50px;
 }
 
+/* Page index et des articles*/
 .titreindex {
 	border-style: groove;
 	text-align: center;
@@ -126,10 +131,12 @@ body {
 	background-color: #ccddff;
 }
 
+/* Page forumulaire*/
 .formulaire {
 	text-align: center;
 	padding: 50px;
 	margin: auto;
+	margin-bottom: 300px;
 }
 
 form {
@@ -158,6 +165,7 @@ form button {
 	font-weight: bold;
 }
 
+/* Pied de page*/
 footer ul {
 	list-style-type: none;
 	background-color: #203864;
@@ -188,6 +196,7 @@ footer img {
 	font-style: italic;
 }
 
+/* Page commandes*/
 .recap {
 	margin: auto;
 	margin-top: 80px;
@@ -235,15 +244,20 @@ footer img {
 	padding: 5%;
 }
 
+/* Page des commandes en preparation*/
 .tableprep {
 	width: 50%;
 	margin: auto;
-	margin-bottom: 250px;
+	margin-bottom: 650px;
 }
 
 .tableprep h1 {
 	text-align: center;
 	padding: 46px;
+}
+
+.tableprep img {
+	width: 100px;
 }
 
 .tableprep table {
@@ -253,6 +267,7 @@ footer img {
 	border-collapse: collapse;
 	border: 3px solid #203864;
 	background-color: #ccddff;
+	float: right;
 }
 
 .tableprep th {
@@ -268,6 +283,7 @@ footer img {
 	background-color: #f2f2f2;
 }
 
+/* Adaptation du site a 850px de large*/
 @media all and (max-width: 850px) {
 	.articles {
 		width: 97%;
@@ -285,6 +301,7 @@ footer img {
 	}
 }
 
+/* Adaptation du site a 550px de large*/
 @media all and (max-width: 550px) {
 	.banner ul {
 		padding: 0px;
@@ -296,6 +313,10 @@ footer img {
 		width: 88.5%;
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+	.articles ul {
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 	.formulaire {
 		padding: 0px;

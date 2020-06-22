@@ -10,7 +10,7 @@ router.get('/',function (req, res, next){
 	var articlejson=JSON.parse(articledata)["articles"];
 	
 	res.render("index",{
-		file: articlejson
+		file: articlejson, title: 'Accueil'
 	});
 });
 

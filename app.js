@@ -9,8 +9,7 @@ var formulaireRouter = require('./routes/formulaire');
 var contactRouter = require('./routes/contact');
 var commandesRouter = require('./routes/commandes');
 var enpreparationRouter = require('./routes/enpreparation');
-var statutGETRouter = require('./routes/statutGET');
-var statutPOSTRouter = require('./routes/statutPOST');
+var statutRouter = require('./routes/statut');
 var usersRouter = require('./routes/users');
 var app = express();
 var engines = require('consolidate');
@@ -34,8 +33,7 @@ app.use('/formulaire', formulaireRouter);
 app.use('/contact', contactRouter);
 app.use('/commandes', commandesRouter);
 app.use('/enpreparation', enpreparationRouter);
-app.use('/statut', statutGETRouter);
-app.use('/statut', statutPOSTRouter);
+app.use('/statut', statutRouter);
 app.use('/users', usersRouter);
 
 
